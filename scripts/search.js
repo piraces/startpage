@@ -3,6 +3,6 @@ function search(e) {
         var searchBar = document.getElementById("search-bar");
         var queryString = searchBar.value;
         searchBar.value = '';
-        window.open('http://google.com/search?q=' + queryString, '_self');
+        window.open('https://duckduckgo.com/?q=' + queryString, '_self');
     }
 }

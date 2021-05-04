@@ -1,8 +1,48 @@
 html {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
-    background-color: #363636;
-    min-height: 100%;
+    height: 100vh;
+    color: rgba(255, 255, 255, .75);
+    font-family: 'JetBrains Mono', monospace;
+    background-color: rgb(25, 25, 25);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.search-bar {
+    text-align: center;
+    background-color: inherit;
+    color: #f1be06;
+    font-size: xxx-large;
+    height: 100%;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.search-bar:focus-visible {
+    outline: 0;
+}
+
+.animation-typewriter {
+    animation: blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
